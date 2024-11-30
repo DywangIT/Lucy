@@ -827,8 +827,11 @@ a {
 
 .prices__list {
     margin-top: 56px;
-    display: flex;
-    gap: 44px;
+    /* display: flex;
+    gap: 44px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
 }
 
 .prices__item {
@@ -916,8 +919,20 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 115px;
     position: relative;
+}
+
+.review__list {
+    width: 942px;
+    display: flex;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.review__item {
+    width: 100%;
+    display: flex;
+    gap: 115px;
 }
 
 .reviews__img {
@@ -1070,7 +1085,7 @@ a {
 
 /* footer */
 .footer {
-    background: #fff6ed;
+    background: linear-gradient(to right, #FFF6ED 43%, #FFFAF5 43%);
     padding: 52px 0 48px;
 }
 
